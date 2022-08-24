@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Math</title>
+    <link id="icon" rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/math-1963506-1657007.png">
+    <meta property="og:title" content="Total Math">
+    <meta property="og:description" content="Total Math is a place where math comes to life!">
+    <meta name="keywords"
+        content="total math,unblocker,proxy,proxies,artcentral.tk,corrosion,incognito,womginx,palladium,pydodge,alloy,ultra violet">
+    <meta property="description" content="Total Math is a place where math comes to life!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="/scripts/sweetalert.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/totalmathmessagingservice.js"></script>
+    <script src="/scripts/totalmathanalytics.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0408663MT"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-C0408663MT');
+    </script>
+    <script async src="https://arc.io/widget.min.js#dM8riYTb"></script>
+    <style>
+        body {
+            background-color: #161923;
+            color: white;
+            text-align: center;
+            font-family: 'Mukta', sans-serif;
+        }
+
+        .center {
+            margin: auto;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .theme {
+            background-color: #485170;
+            color: white;
+            border-radius: 5px;
+            border: #000000;
+        }
+    </style>
+    <script src="/scripts/tabcloak.js"></script>
+</head>
+
+<body lang="en-us">
+    <noscript>
+        <h1>Enable Javascript goofy.</h1>
+    </noscript>
+    <h1>Total Math</h1>
+    <h2><a href="https://discord.gg/YCJVmbfuqT">Join our Discord for more links!</a> <a href="javascript:opendiscord()">(Unblocked
+            Version)</a></h2>
+    <h3><a href="/o/">Cloak Your Total Math Tabs</a></h3>
+    <h3><a href="/g/">Apps And Games (Minecraft)</a></h3>
+
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+
+    <div class="center">
+        <input placeholder="open.spotify.com" class="theme" style="width: 100%;" type="text" id="query">
+        <br>
+        <select style="float: left;" class="theme" id="proxytype">
+            <option value="uv">Ultra Violet</option>
+            <option value="rh">Rammerhead</option>
+            <option value="rhodium">Rhodium</option>
+        </select>
+        <button id="proxyit" onclick="proxy();" style="float: right;" class="theme">Proxy It!</button>
+        <br>
+        <div id="searchresults"></div>
+        <h6>Search Predictions From DuckDuckGo</h6>
+    </div>
+
+    <h3><a href="/d/">Download The Total Math Client</a></h3>
+    <h4><a href="javascript:openaboutblank()">Spoof Your Total Math Tab</a></h4>
+
+    <h4><a href="/f/">Feedback And Concerns</a></h4>
+
+    <script type="text/javascript">
+
+        var failedtoloaduv = false
+
+        try {
+            window.navigator.serviceWorker.register('/sw.js', {
+                scope: __uv$config.prefix
+            });
+        } catch (error) {
+            failedtoloaduv = true
+        }
+
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.get('alertiframe') == 'true') {
+            Swal.fire({
+                title: 'Note',
+                text: 'To reload the page, right click the window and click "Reload Frame".',
+                icon: 'info'
+            });
+        }
+
+        function isUrl(val = '') {
+            if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+            return false;
+        };
+
+        function openaboutblank() {
+            try {
+                var spoofedwindow = window.open("", "_blank");
+                spoofedwindow.document.write(`<!doctypehtml><html lang=en-us xmlns=http://www.w3.org/1999/xhtml><meta charset=UTF-8><meta content="IE=edge"http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1"name=viewport><title>Total Math</title><link href=https://cdn.iconscout.com/icon/free/png-256/math-1963506-1657007.png rel=icon><meta content="Total Math"property=og:title><meta content="Total Math is a place where math comes to life!"property=og:description><meta content="total math,unblocker,proxy,proxies,artcentral.tk,corrosion,incognito,womginx,palladium,pydodge,alloy,ultra violet"name=keywords><meta content="Total Math is a place where math comes to life!"property=description><style>body{background-color: #161923;},html{margin:0;padding:0;height:100%;overflow:hidden}#content{position:absolute;left:0;right:0;bottom:0;top:0}</style><div id=content><iframe id=spoofedframe frameborder=0 height=100% src=about:blank width=100%></iframe></div><script type=text/javascript>setTimeout(() => {document.getElementById('spoofedframe').src = 'https://${window.location.hostname}/'}, 0)<\/script>`);
+                spoofedwindow.document.close();
+                spoofedwindow.stop();
+            } catch (error) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Failed to open spoofed window, your browser may be blocking popups.',
+                    icon: 'error'
+                });
+            }
+        }
+
+
+        function opendiscord() {
+            if (failedtoloaduv === false) {
+                Swal.fire({
+                    title: 'Loading...',
+                    text: 'Please wait while the server processes your request.',
+                    icon: 'info',
+                    allowOutsideClick: false,
+                });
+                Swal.showLoading();
+                let url = document.getElementById('query').value.trim();
+                if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+                window.sessionStorage.setItem('query', __uv$config.prefix + __uv$config.encodeUrl('https://discord.gg/YCJVmbfuqT'));
+                window.sessionStorage.removeItem('offloaded');
+                window.location.href = '/s/';
+            } else {
+                Swal.fire({
+                    title: 'Warning',
+                    text: 'It seems like your browser or device does not support the Ultra Violet proxy, please use another proxy and try again.',
+                    icon: 'warning'
+                });
+            }
+        }
+
+        function stream() {
+            if (failedtoloaduv === false) {
+                Swal.fire({
+                    title: 'Loading...',
+                    text: 'Please wait while the server processes your request.',
+                    icon: 'info',
+                    allowOutsideClick: false,
+                });
+                Swal.showLoading();
+                let url = document.getElementById('query').value.trim();
+                if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+                window.sessionStorage.setItem('query', __uv$config.prefix + __uv$config.encodeUrl('https://www.youtube.com/watch?v=2S9iM374I2I'));
+                window.sessionStorage.removeItem('offloaded');
+                window.location.href = '/s/';
+            } else {
+                Swal.fire({
+                    title: 'Warning',
+                    text: 'It seems like your browser or device does not support the Ultra Violet proxy, please use another proxy and try again.',
+                    icon: 'warning'
+                });
+            }
+        }
+
+        function proxy() {
+            if (document.getElementById('proxytype').value == 'uv') {
+                event.preventDefault();
+                if (failedtoloaduv === false) {
+                    Swal.fire({
+                        title: 'Loading...',
+                        text: 'Please wait while the server processes your request.',
+                        icon: 'info',
+                        allowOutsideClick: false,
+                    });
+                    Swal.showLoading();
+                    let url = document.getElementById('query').value.trim();
+                    if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                    else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+                    window.sessionStorage.setItem('query', __uv$config.prefix + __uv$config.encodeUrl(url));
+                    window.sessionStorage.removeItem('offloaded');
+                    window.location.href = '/s/';
+                } else {
+                    Swal.fire({
+                        title: 'Warning',
+                        text: 'It seems like your browser or device does not support the Ultra Violet proxy, please use another proxy and try again.',
+                        icon: 'warning'
+                    });
+                }
+            } else if (document.getElementById('proxytype').value == 'rhodium') {
+                Swal.fire({
+                    title: 'Loading...',
+                    text: 'Please wait while the server processes your request.',
+                    icon: 'info',
+                    allowOutsideClick: false,
+                });
+                Swal.showLoading();
+                var url = document.getElementById('query').value.trim();
+                if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+                event.preventDefault();
+                var xhr = new XMLHttpRequest()
+                xhr.open('POST', '/project/gateway/', true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+                        window.sessionStorage.setItem('query', xhr.responseURL);
+                        window.sessionStorage.removeItem('offloaded');
+                        window.location.href = '/s/';
+                    }
+                }
+                xhr.send("url=" + url, null, true);
+            } else if (document.getElementById('proxytype').value == 'rh') {
+                event.preventDefault();
+                if (confirm('Warning: Rammerhead does not have stealth support or tab cloaking support, this means that all that you browse on Rammerhead will be visible in your history. Also please do not share your Rammerhead links as anyone that has them can access your logged in sites. Are you sure you want to continue?') === true) {
+                    Swal.fire({
+                        title: 'Loading...',
+                        text: 'Please wait while the server processes your request.',
+                        icon: 'info',
+                        allowOutsideClick: false,
+                    });
+                    Swal.showLoading();
+                    var url = document.getElementById('query').value.trim();
+                    if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+                    else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+                    var rhkey = localStorage.getItem('RHkey');
+                    var newkey = false;
+                    if (!rhkey) {
+                        var newsessionrequest = new XMLHttpRequest()
+                        newsessionrequest.open('GET', '/newsession', true);
+                        newsessionrequest.onreadystatechange = function () {
+                            if (newsessionrequest.readyState == 4) {
+                                if (newsessionrequest.status == 200) {
+                                    rhkey = newsessionrequest.responseText;
+                                    localStorage.setItem('RHkey', newsessionrequest.responseText)
+                                    newkey = true;
+                                } else {
+                                    Swal.fire({
+                                        title: 'Error',
+                                        text: 'An error occurred while getting a new Rammerhead key, please try again later.',
+                                        icon: 'error'
+                                    }).then(() => {
+                                        window.location.href = '/';
+                                    });
+                                }
+                            }
+                        }
+                        newsessionrequest.send();
+                    }
+                    if (newkey == false) {
+                        var checksessionrequest = new XMLHttpRequest()
+                        checksessionrequest.open('GET', '/sessionexists?id=' + rhkey, true);
+                        checksessionrequest.onreadystatechange = function () {
+                            if (checksessionrequest.readyState == 4) {
+                                if (checksessionrequest.status == 200) {
+                                    if (checksessionrequest.responseText == 'exists') {
+                                        // https://stackoverflow.com/a/2917
+                                        var newWin = window.open('/' + rhkey + '/' + url, '_blank');
+                                        if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
+                                            location.replace('/' + rhkey + '/' + url);
+                                        } else {
+                                            location.reload();
+                                        }
+                                    } else {
+                                        var newsessionrequest = new XMLHttpRequest()
+                                        newsessionrequest.open('GET', '/newsession', true);
+                                        newsessionrequest.onreadystatechange = function () {
+                                            if (newsessionrequest.readyState == 4) {
+                                                if (newsessionrequest.status == 200) {
+                                                    rhkey = newsessionrequest.responseText;
+                                                    localStorage.setItem('RHkey', newsessionrequest.responseText);
+                                                    // https://stackoverflow.com/a/2917
+                                                    var newWin = window.open('/' + rhkey + '/' + url, '_blank');
+                                                    if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
+                                                        location.replace('/' + rhkey + '/' + url);
+                                                    } else {
+                                                        location.reload();
+                                                    }
+                                                } else {
+                                                    Swal.fire({
+                                                        title: 'Error',
+                                                        text: 'An error occurred while getting a new Rammerhead key, please try again later.',
+                                                        icon: 'error'
+                                                    }).then(() => {
+                                                        location.reload();
+                                                    });
+                                                }
+                                            }
+                                        }
+                                        newsessionrequest.send();
+                                    }
+                                } else {
+                                    Swal.fire({
+                                        title: 'Error',
+                                        text: 'An error occurred while confirming your Rammerhead key, please try again later.',
+                                        icon: 'error'
+                                    }).then(() => {
+                                        location.reload();
+                                    });
+                                }
+                            }
+                        }
+                        checksessionrequest.send();
+                    } else {
+                        // https://stackoverflow.com/a/2917
+                        var newWin = window.open('/' + rhkey + '/' + url, '_blank');
+                        if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
+                            location.replace('/' + rhkey + '/' + url);
+                        } else {
+                            window.location.href = '/';
+                        }
+                    }
+                }
+            }
+        }
+
+        window.addEventListener("click", function (event) {
+            if (document.getElementById('proxytype').value == 'uv') {
+                document.getElementById('query').placeholder = 'open.spotify.com'
+            } else if (document.getElementById('proxytype').value == 'rhodium') {
+                document.getElementById('query').placeholder = 'radon.games'
+            } else if (document.getElementById('proxytype').value == 'rh') {
+                document.getElementById('query').placeholder = 'netflix.com'
+            }
+        });
+
+        document.getElementById('query').addEventListener("keyup", function (event) {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+                proxy();
+            }
+        });
+        document.getElementById('query').addEventListener("input", function (event) {
+            var currenttext = document.getElementById('query').value;
+            setTimeout(() => {
+                if (currenttext == document.getElementById('query').value) {
+                    var xhr = new XMLHttpRequest()
+                    xhr.open('GET', '/api/searchpredictor.php?q=' + encodeURI(document.getElementById('query').value), true);
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState == 4) {
+                            if (xhr.status == 200) {
+                                while (document.getElementById('searchresults').firstChild) {
+                                    document.getElementById('searchresults').removeChild(document.getElementById('searchresults').firstChild);
+                                }
+                                var searchPredictions = null;
+                                try {
+                                    searchPredictions = JSON.parse(xhr.responseText);
+                                } catch (error) {
+                                    console.warn('Failed to parse JSON.');
+                                }
+                                if (searchPredictions === null) {
+                                } else {
+                                    searchPredictions.forEach(elementValue => {
+                                        var button = document.createElement('button');
+                                        var buttonclass = document.createAttribute('class');
+                                        var buttonstyle = document.createAttribute('style');
+                                        buttonclass.value = 'theme';
+                                        buttonstyle.value = 'width: 100%';
+                                        button.setAttributeNode(buttonclass);
+                                        button.setAttributeNode(buttonstyle);
+                                        button.innerHTML = elementValue['phrase'];
+                                        button.addEventListener("click", function (event) {
+                                            document.getElementById('query').value = elementValue['phrase'];
+                                            document.getElementById('proxyit').click();
+                                        });
+                                        document.getElementById('searchresults').appendChild(button);
+                                        document.getElementById('searchresults').appendChild(document.createElement('br'));
+                                    });
+                                }
+                            }
+                        }
+                    }
+                    xhr.send("url=" + document.getElementById('query').value.trim());
+                }
+            }, "200")
+        });
+    </script>
+
+    <div class="center" style="width: 300px;">
+        <h2>How do I use Total Math?</h2>
+        <h4>Just type something in the box above and our server will proxy it for you, or get easy and fast access to
+            apps using our apps and games section near the top of the page!</h4>
+        <h2>What is a VPN?</h2>
+        <h4>A VPN tunnels all your web traffic thru a virtual tunnel so you can stay anonymous on the web without
+            being tracked.</h4>
+        <h2>What is a Web Proxy?</h2>
+        <h4>A web proxy is basically a VPN that only runs in a browser tab that has a proxy site open so all your
+            other web traffic can go through directly without tunneling it thru the proxy.</h4>
+        <h2>What is Total Math?</h2>
+        <h4>Total Math is a free proxy site that supports most popular websites so you can surf a unfiltered web for
+            free!</h4>
+        <h2>What is the difference between a VPN and a Web Proxy?</h2>
+        <h4>A Web Proxy only runs in your browser and only tunnels browser traffic while a VPN might be installed on
+            your device that tunnels all your web traffic.</h4>
+        <img src="/static/ayo.jpg" width="300px" />
+    </div>
+</body>
+
+</html>
